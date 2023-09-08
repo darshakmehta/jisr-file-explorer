@@ -1,0 +1,20 @@
+.context-menu-options {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  padding: 8px 0;
+  position: fixed;
+  z-index: 999;
+
+  & > div {
+    cursor: pointer;
+    padding: 8px 16px;
+    user-select: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}

@@ -20,9 +20,21 @@ const FolderComponent = ({ depth, folderData }: FolderComponentProps) => {
     setExpanded(!expanded);
   };
 
+  const handleKeyPress = (event: React.KeyboardEvent) => {
+    if (event.key === 'Enter') {
+      toggleFolder();
+    }
+  };
+
   return (
     <div>
-      <div onClick={toggleFolder}>
+      <div
+        onKeyDown={handleKeyPress}
+        tabIndex={0}
+        role="button"
+        onClick={toggleFolder}
+        aria-label={`Toggle folder: ${folderData.name}`}
+      >
         <img
           src={folder}
           alt="folder"

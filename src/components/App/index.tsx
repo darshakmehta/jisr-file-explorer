@@ -16,9 +16,22 @@ const App = () => {
     setExpanded(!expanded);
   };
 
+  const handleKeyPress = (event: React.KeyboardEvent) => {
+    if (event.key === 'Enter') {
+      toggleFolder();
+    }
+  };
+
   return (
     <div className="container">
-      <div className="parent-folder" onClick={toggleFolder}>
+      <div
+        className="parent-folder"
+        onClick={toggleFolder}
+        onKeyDown={handleKeyPress}
+        role="button"
+        tabIndex={0}
+        aria-label={`Toggle folder: ${folders.name}`}
+      >
         <img
           src={folder}
           alt="folder"
