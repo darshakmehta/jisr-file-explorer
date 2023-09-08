@@ -1,0 +1,6 @@
+# generated files
+build/
+.github
+.vercel
+package-lock.json
+README.md

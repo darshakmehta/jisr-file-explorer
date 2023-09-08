@@ -1,0 +1,17 @@
+.folder-icon,
+.file-icon {
+  height: 1.5rem;
+  left: 5px;
+  position: relative;
+  top: 5px;
+  width: 1.5rem;
+}
+
+// TODO FUTURE: write scss function and mixin to calculate
+/* Loop to generate depth-* classnames and set padding-left */
+$padding-increment: 20px;
+@for $i from 0 through 5 {
+  .depth-#{$i} {
+    padding-left: $i * $padding-increment;
+  }
+}
