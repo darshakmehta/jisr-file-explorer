@@ -1,4 +1,4 @@
-import { File, Folder } from '../components/types';
+import { File, Folder } from '../types/types';
 
 /**
  * Sort Array based on folder at top followed by file

@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import FileExplorer from '../FileExplorer';
 
+import { Folder } from '../../types/types';
 import { sortByType } from '../../utils/sortUtil';
-import { Folder } from '../types';
 
 import folder from '../../assets/svgs/folder-icon.svg';
 import './FolderComponent.scss';

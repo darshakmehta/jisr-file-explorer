@@ -1,4 +1,4 @@
-import { File } from '../types';
+import { File } from '../../types/types';
 
 import file from '../../assets/svgs/file-icon.svg';
 import './FileComponent.scss';

@@ -1,6 +1,6 @@
+import { File, FileType, Folder, Folders } from '../../types/types';
 import FileComponent from '../FileComponent';
 import FolderComponent from '../FolderComponent';
-import { File, FileType, Folder, Folders } from '../types';
 
 type FileExplorerProps = {
   depth: number;
